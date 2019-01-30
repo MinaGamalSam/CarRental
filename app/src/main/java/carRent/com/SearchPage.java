@@ -57,9 +57,9 @@ public class SearchPage extends AppCompatActivity {
     ArrayList<Client> al_recSearch ;
     ProgressBar progressBar;
     TextView tv_noDonors,tv_tryAgain;
-    Spinner spinner_country,spinner_cities,spinner_bloodType;
-    ArrayAdapter adapter_country,adapter_cities,adapter_bloodType;
-    String [] country,cities,bloodType;
+    Spinner spinner_country,spinner_cities,spinner_carCategory;
+    ArrayAdapter adapter_country,adapter_cities,adapter_carCategory;
+    String [] country,cities,carCategoryArray;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -87,7 +87,7 @@ public class SearchPage extends AppCompatActivity {
             spinner_country = findViewById(R.id.spinner_searchCountry);
             cities = getResources().getStringArray(R.array.defaultCity);
             spinner_cities = findViewById(R.id.spinner_searchCity);
-            spinner_bloodType = findViewById(R.id.spinner_searchBloodType);
+            spinner_carCategory = findViewById(R.id.spinner_searchBloodType);
 
         }catch (Exception e){
 
@@ -214,14 +214,14 @@ public class SearchPage extends AppCompatActivity {
     }
     public void setSpinnerBloodType(){
         try {
-            bloodType = getResources().getStringArray(R.array.carCategory);
-            adapter_bloodType = new ArrayAdapter(SearchPage.this,R.layout.spinner,bloodType);
-            spinner_bloodType.setAdapter(adapter_bloodType);
-            spinner_bloodType.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            carCategoryArray = getResources().getStringArray(R.array.carCategory);
+            adapter_carCategory = new ArrayAdapter(SearchPage.this,R.layout.spinner,carCategoryArray);
+            spinner_carCategory.setAdapter(adapter_carCategory);
+            spinner_carCategory.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                 @Override
                 public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                     if (position!=0) {
-                        carCategory = bloodType[position];
+                        carCategory = carCategoryArray[position];
 
                     }
                 }
@@ -242,7 +242,7 @@ public class SearchPage extends AppCompatActivity {
         alertDialog.show();
         spinner_country = alertShow.findViewById(R.id.spinner_searchCountry);
         spinner_cities = alertShow.findViewById(R.id.spinner_searchCity);
-        spinner_bloodType = alertShow.findViewById(R.id.spinner_searchBloodType);
+        spinner_carCategory = alertShow.findViewById(R.id.spinner_searchBloodType);
         TextView btn_alertSearch = alertShow.findViewById(R.id.btn_alertSearch);
         TextView btn_alertCancel = alertShow.findViewById(R.id.btn_alertCancel);
         setSpinnerCountry();
@@ -254,7 +254,7 @@ public class SearchPage extends AppCompatActivity {
                if (connected()) {
                    if (spinner_country.getSelectedItemPosition() != 0) {
                        if (spinner_cities.getSelectedItemPosition() != 0) {
-                           if (spinner_bloodType.getSelectedItemPosition() != 0) {
+                           if (spinner_carCategory.getSelectedItemPosition() != 0) {
                                progressBar.setVisibility(View.VISIBLE);
                                getDataBaseAlertDialog();
                                adaper_recy = new Adaper_Recy(SearchPage.this, al_recSearch);
