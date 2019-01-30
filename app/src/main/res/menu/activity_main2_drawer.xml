@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+        <item
+            android:id="@+id/nav_Search_for_a_donor"
+            android:icon="@drawable/ic_search"
+            android:title="@string/Search_for_a_car" />
+        <item
+            android:id="@+id/nav_SignUpdonor"
+            android:icon="@drawable/caricon"
+            android:title="@string/SignUps" />
+        <item
+            android:id="@+id/nav_The_Benefits_of_Donating_Blood"
+            android:icon="@drawable/accessto"
+            android:title="@string/aboutUs" />
+        <item
+            android:id="@+id/which_factions_you_can_donate_blood_to"
+            android:icon="@drawable/privacy"
+            android:title="@string/accessToInfo" />
+
+        <item
+            android:id="@+id/nav_Share_app"
+            android:icon="@drawable/ic_menu_share"
+            android:title="@string/Share_app" />
+
+
+</menu>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".splash"
+    android:background="@color/background">
+
+    <ImageView
+        android:id="@+id/ic_splash"
+        android:layout_width="174dp"
+        android:layout_height="121dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/car" />
+    <TextView
+        android:id="@+id/textBloodBank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:text="Car  Rental"
+        android:textColor="@android:color/white"
+        android:textSize="45dp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints" />
+</LinearLayout>

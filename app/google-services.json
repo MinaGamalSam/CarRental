@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "463738394090",
+    "firebase_url": "https://carrent-94d5d.firebaseio.com",
+    "project_id": "carrent-94d5d",
+    "storage_bucket": "carrent-94d5d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:463738394090:android:b9d1f8a919286c3a",
+        "android_client_info": {
+          "package_name": "carRent.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "463738394090-r2k5m8u79156tv8v8pcd1dmrtjocqern.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "carRent.com",
+            "certificate_hash": "093d48e8e0fbf733ea1bf1d73edccbfa4bf78a7e"
+          }
+        },
+        {
+          "client_id": "463738394090-oaq51su4v391ci3gv28mqhn6sqs2lgup.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCY9I6_PYCk0bl-9Y77lvuEbFoYqlAodsc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "463738394090-oaq51su4v391ci3gv28mqhn6sqs2lgup.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
